@@ -33,9 +33,12 @@ PHPなどのサーバーサイドスクリプトを使わずに、jQueryだけ�
 
 ### javascriptの記述
 
-<script type="text/javascript">
-  $(function() {
-    $("#header-outer").load("https://www.olp.co.jp/medical/inc/header.html #header-inner");
-    $("#footer-outer").load("https://www.olp.co.jp/medical/inc/footer.html #footer-inner");
-  })
-</script>
+    <script type="text/javascript">
+      $(function() {
+        $("#header-outer").load("/inc/header.html #header-inner");
+      })
+    </script>
+
+htmlをロードするタイミングでheader.html内に#header-innerがインクルードされるようになります。  
+
+もちろん、htmlをロードするタイミング以外にクリックなどの別のイベントにも設置可能です。  
