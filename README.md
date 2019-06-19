@@ -41,7 +41,7 @@ PHPなどのサーバーサイドスクリプトを使わずに、jQueryだけ�
       })
     </script>
 
-htmlファイルの \</head>\ より前に記述してください。
+htmlファイルの `</head>` より前に記述してください。
 
 htmlをロードするタイミングでheader.html内に#header-innerがインクルードされるようになります。  
 
