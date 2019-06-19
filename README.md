@@ -1,1 +1,1 @@
-# tips_htmlinclude
+## htmlファイルで共通箇所をインクルード
