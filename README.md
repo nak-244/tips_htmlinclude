@@ -31,6 +31,8 @@ PHPなどのサーバーサイドスクリプトを使わずに、jQueryだけ�
 
 また今回の例では読み込まれる側をhtml形式にしましたが、txt形式でも問題ありません。
 
+主に、ヘッダーメニューやフッター部分で活用するものと思われるので、header.htmlとかfooter.htmlなど、読み込まれる側のファイルはincフォルダなどで固めておいたほうが後々管理しやすくなります。
+
 ### javascriptの記述
 
     <script type="text/javascript">
@@ -38,6 +40,8 @@ PHPなどのサーバーサイドスクリプトを使わずに、jQueryだけ�
         $("#header-outer").load("/inc/header.html #header-inner");
       })
     </script>
+
+htmlファイルの'</head>'より前に記述してください。
 
 htmlをロードするタイミングでheader.html内に#header-innerがインクルードされるようになります。  
 
